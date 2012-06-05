@@ -21,8 +21,7 @@ class Vim < Formula
     # in the Cellar, and be removed when vim is upgraded.
     system "./configure", "--prefix=#{HOMEBREW_PREFIX}",
                           "--mandir=#{man}",
-                          "--enable-gui=no",
-                          "--without-x",
+                          "--enable-gui=gtk2",
                           "--disable-nls",
                           "--enable-multibyte",
                           "--with-tlib=ncurses",
